@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+
+<VBox xmlns:fx="http://javafx.com/fxml">
+    <TextField fx:id="hotelIdTextField" promptText="Enter Hotel ID"/>
+    <Button text="Load Cameras" onAction="#handleLoadCameras"/>
+    <TableView fx:id="cameraTableView">
+        <columns>
+            <TableColumn text="ID" fx:id="idColumn"/>
+            <TableColumn text="Hotel ID" fx:id="hotelIdColumn"/>
+            <TableColumn text="Room Number" fx:id="roomNumberColumn"/>
+            <TableColumn text="Price" fx:id="priceColumn"/>
+            <TableColumn text="Facilities" fx:id="facilitiesColumn"/>
+        </columns>
+    </TableView>
+    <Button text="Add Camera" onAction="#handleAddCamera"/>
+    <Button text="Update Camera" onAction="#handleUpdateCamera"/>
+    <Button text="Delete Camera" onAction="#handleDeleteCamera"/>
+</VBox>

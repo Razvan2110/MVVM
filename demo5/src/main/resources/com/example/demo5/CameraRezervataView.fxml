@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.demo5.view.CameraRezervataView" spacing="10" alignment="CENTER">
+    <TableView fx:id="tableView" prefHeight="200" prefWidth="600">
+        <columns>
+            <TableColumn fx:id="colId" text="ID" />
+            <TableColumn fx:id="colIdClient" text="ID Client" />
+            <TableColumn fx:id="colIdHotel" text="ID Hotel" />
+            <TableColumn fx:id="colIdCamera" text="ID Camera" />
+            <TableColumn fx:id="colCheckin" text="Check-in" />
+            <TableColumn fx:id="colCheckout" text="Check-out" />
+            <TableColumn fx:id="colStatusRezervare" text="Status Rezervare" />
+        </columns>
+    </TableView>
+
+    <HBox spacing="10" alignment="CENTER">
+        <TextField fx:id="txtIdClient" promptText="ID Client" />
+        <TextField fx:id="txtIdHotel" promptText="ID Hotel" />
+        <TextField fx:id="txtIdCamera" promptText="ID Camera" />
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+        <DatePicker fx:id="dpCheckin" promptText="Check-in" />
+        <DatePicker fx:id="dpCheckout" promptText="Check-out" />
+        <TextField fx:id="txtStatusRezervare" promptText="Status Rezervare" />
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button fx:id="btnAdd" text="Adaugă" />
+        <Button fx:id="btnUpdate" text="Actualizează" />
+        <Button fx:id="btnDelete" text="Șterge" />
+    </HBox>
+
+    <Label fx:id="lblMesaj" />
+</VBox>

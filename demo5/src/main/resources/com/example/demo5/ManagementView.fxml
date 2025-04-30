@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.demo5.view.ManagementView">
+    <tabs>
+        <Tab text="Hotel Management">
+            <fx:include source="HotelView.fxml" />
+        </Tab>
+        <Tab text="Camera Management">
+            <fx:include source="CameraView.fxml" />
+        </Tab>
+        <Tab text="Client Management">
+            <fx:include source="ClientView.fxml" />
+        </Tab>
+        <Tab text="Camera Rezervată Management">
+            <fx:include source="CameraRezervataView.fxml" />
+        </Tab>
+    </tabs>
+</TabPane>
